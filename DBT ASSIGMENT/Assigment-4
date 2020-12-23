@@ -1,0 +1,5 @@
+Select dept_name,emp_name from  emp inner join dpartment where ename.dpart_id = emp_name.dpart_id;
+select * from emp inner join depart where  ename.dpart_id = emp_name.dpart_id;
+SELECT department_id, SUM(salary)  FROM  employees GROUP BY  department_id;
+select * from emp left outer join depart where  ename.dpart_id = emp_name.dpart_id;
+select * from emp Right outer join depart where  ename.dpart_id = emp_name.dpart_id;

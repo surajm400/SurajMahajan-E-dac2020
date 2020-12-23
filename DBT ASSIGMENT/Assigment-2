@@ -1,0 +1,53 @@
+create table Publisher (pname int(4),phone int(12),email varchar(20));
+insert into publishers(pname,phone,email) values ((p10,9867167231,Suraj@gmail.com),(p20,9867167235,raj@gmail.com),(p30,9867167234,sunny@gmail.com));
+create table Authors(Aname int(4),phone int(12)));
+insert into Authors(Aname,phone) values (A10,9867167232),(A20,9867167234),(A30,9867167231),(A30,9867167234);
+create table Title (titleid int(4),title int(12),pdate date);
+insert into Title (titleid,title,pdate) values ()
+create table TitleAuthors(auid int(4),titleid int(4),importance varchar(20)); 
+insert into TitleAuthors()
+*********************Like***************
+
+Select * from SUBJECTS where SNAME like 'ORACLE DATABASE 10g';
+select * from SUBJECTS where SNAME like 'J%';
+select * from SUBJECTS where SNAME Like '%.NET%';
+select * from authors where ANAME Like '%ER';
+select * from PUBLISHERS where pname Like 'HILL';
+
+***************Relational Operator************
+select title from title group by title having Price > 500;
+select title from title group by title having Published > 2020-10-10;
+select sname form subjects group by sname having id='java' or id='jee';
+select aname from authors group by aname having id > 103';
+select title from titles group by tname having tid = 101 or price > 400;
+select * from Publishers where publisher_Name = ('techmedia','wrox');
+
+***************Aggregrate Function*********
+select max(price) from titles;
+select avg(importants) from titleauthors;
+select count(number) from titles;
+select sum(price) from titles;
+
+***************Date*********
+select title from titles where month = "Apr";
+select sysdate();
+select month(current_date());
+select last_day(31-12-20202); 
+
+****************DML*********
+create table employee(empid int(4),emp_name char(20));
+insert into employee (empid,emp_name) values (1,'Raj'),(2,'shivRaj'),(3,'JaiRaj')   
+Alter table  employee add column dept_id int(4);
+Alter table  employee Modify column emp_name varchar2(20);
+update employee set emp_name = 'scott' where id = '2';
+truncate employee;
+
+select sal(float(7,3)) from emp;
+select round(1234.567);
+select truncate(1234.567);
+select ceil(1234.567);
+select floor(1234.567);
+select sign(-15);
+select mod(1234.567);
+select sqrt(4);
+select pow(4);
